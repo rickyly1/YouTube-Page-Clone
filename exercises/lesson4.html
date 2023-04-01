@@ -1,0 +1,317 @@
+<style>
+    .uber-button {
+        background-color: black;
+        color: white;
+        padding: 8px 17px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+    }
+
+    .uber-button:hover {
+        opacity: 0.7;
+    }
+
+    .amazon-button {
+        background-color: rgb(255, 216, 20);
+        padding:10px 50px;
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        
+    }
+
+    .amazon-button:hover {
+        background-color:rgb(238, 208, 55);
+    }
+
+    .github-button {
+        background-color: rgb(46, 164, 79);
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px 14px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+    }
+
+    .github-button:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .bootstrap-button1 {
+        background-color: rgb(121, 82, 179);
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+    }
+
+    .bootstrap-button1:hover {
+        background-color:rgb(95, 66, 138);
+    }
+
+    .bootstrap-button2 {
+        background-color: white;
+        color: rgb(108, 117, 125);
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px 14px;
+        border-radius: 4px;
+        border-width: 1px;
+        border-color: rgb(108, 117, 125);
+        cursor: pointer;
+        transition: background-color 0.15s,
+            color 0.15s;
+    }
+
+    .bootstrap-button2:hover {
+        background-color: rgb(108, 117, 125);
+        color: white;
+    }
+
+    .linkedin-button1 {
+        background-color: rgb(10, 102, 194);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 10px 14px;
+        border: none;
+        border-radius: 19px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+    }
+
+    .linkedin-button1:hover {
+        background-color: rgb(11, 90, 168);
+    }
+
+    .linkedin-button2 {
+        background-color: white;
+        color: rgb(10, 102, 194);
+        font-weight: bold;
+        font-size: 15px;
+        padding: 9px 14px;
+        border-width: 1px;
+        border-radius: 19px;
+        border-color:rgb(10, 102, 194);
+        cursor: pointer;
+        transition: background-color 0.15s,
+            border-width 0.15s;
+    }
+
+    .linkedin-button2:hover {
+        background-color: rgba(10, 102, 194, 0.1);
+        border-width: 2px;
+    }
+
+    .amazon {
+        color:rgb(70, 175, 140);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .amazon:hover {
+        color: orange;
+    }
+
+    .amazon-text1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .amazon-text2 {
+        font-weight: bold;
+        color: green;
+    }
+
+    .amazon-text3 {
+        padding-bottom: 5px;
+    }
+
+    .amazon-button1 {
+        background-color: rgb(255, 216, 20);
+        height: 35px;
+        width: 120px;
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .amazon-button1:hover {
+        background-color:rgb(238, 208, 55);
+    }
+
+    .amazon-button1:active {
+        background-color: rgb(255, 216, 20);
+        opacity: 0.7;
+    }
+
+    .amazon-button2 {
+        background-color:orange;
+        height: 35px;
+        width: 120px;
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .amazon-button2:hover {
+        background-color: rgb(216, 140, 0);
+    }
+
+    .amazon-button2:active {
+        background-color: orange;
+        opacity: 0.7;
+    }
+
+    .navi-button {
+        padding: 8px 7px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .pagination {
+        padding: 0 3px;
+    }
+
+    .stretch {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 8px 13px;
+        border: none;
+        cursor: pointer;
+        transition: padding 0.3s;
+        vertical-align: top;
+    }
+
+    .stretch:hover {
+        padding: 16px 27px;
+    }
+
+    .shadow {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 8px 13px;
+        border: none;
+        cursor: pointer;
+        vertical-align: top;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .shadow:active {
+        box-shadow: none;
+        margin-top: 4px;
+        margin-left: 4px;
+    }
+
+    .one {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 8px 13px;
+        margin: 0px 6px;
+        border: none;
+        cursor: pointer;
+        transition: padding 0.3s, 
+            margin 0.3s;
+        vertical-align: top;
+    }
+
+    .one:hover {
+        padding: 8px 18px;
+        margin: 0px 1px;
+    }
+
+    .two {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 8px 13px;
+        margin: 0px 6px;
+        border: none;
+        cursor: pointer;
+        transition: padding 0.3s,
+            margin 0.3s;
+        vertical-align: top;
+    }
+
+    .two:hover {
+        padding: 8px 18px;
+        margin: 0px 1px;
+    }
+
+    .three {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 8px 13px;
+        margin: 0px 6px;
+        border: none;
+        cursor: pointer;
+        transition: padding 0.3s,
+            margin 0.3s;
+        vertical-align: top;
+    }
+
+    .three:hover {
+        padding: 8px 18px;
+        margin: 0px 1px;
+    }
+</style>
+
+<!-- 4a -->
+<button class="uber-button">Request now</button>
+
+<!-- 4b -->
+<button class="amazon-button">Add to Cart</button>
+
+<!-- 4c -->
+<button class="github-button">Sign up</button>
+
+<!-- 4d -->
+<button class="bootstrap-button1">Get started</button>
+<button class="bootstrap-button2">Download</button>
+
+<!-- 4e -->
+<button class="linkedin-button1">Apply on company website</button>
+<button class="linkedin-button2">Save</button>
+
+<!-- 4f -->
+<span>text</span>
+<a class="amazon" href="https://www.amazon.com/">Back to Amazon</a>
+<p class="amazon-text1">Nike Black Running Shoes</p>
+<p class="amazon-text2">$39 - in stock.</p>
+<p class="amazon-text3">Free delivery tomorrow.</p>
+<button class="amazon-button1">Add to Cart</button>
+<button class="amazon-button2">Buy now</button>
+
+<!-- 4h -->
+<button class="navi-button">Back</button>
+<a class="pagination" href="">1</a>
+<a class="pagination" href="">2</a>
+<a class="pagination" href="">3</a>
+<a class="pagination" href="">4</a>
+<a class="pagination" href="">5</a>
+<button class="navi-button">Next</button>
+
+<!-- 4i -->
+<button class="stretch">Stretch</button>
+
+<!-- 4j -->
+<button class="shadow">Shadow</button>
+
+<!-- 4j -->
+<button class="one">One</button>
+<button class="two">Two</button>
+<button class="three">Three</button>
